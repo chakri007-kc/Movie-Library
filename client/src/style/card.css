@@ -1,0 +1,126 @@
+.loading-2{
+    margin-top: 30vh;
+    width: 15vw;
+}
+
+.card{
+    background-color: #3d3c3c;
+    /* background-size: cover; */
+    min-height: 90vh;
+    max-height: 100%;
+    padding-top: 8vh;
+    padding-bottom: 2vh;
+    font-family: 'Quicksand', sans-serif;
+    color: #fff;
+}
+
+.listName-1{
+    color: #fff;
+    font-size: 30px;
+}
+
+.delete-2{
+    grid-area: delete;
+    display: flex;
+    overflow: hidden;
+    justify-content: flex-end;
+    border: none;
+    text-decoration: none;
+    background: none;
+    color:rgb(255, 0, 0);
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.itemList{
+    border: #fff solid 1px;
+    border-radius: 8px;
+    margin-left: 8vw;
+    margin-right: 8vw;
+    padding: 2%;
+    margin-top: 2vw;
+    display: grid;
+    grid-template-areas:
+    "poster title"
+    "poster director"
+    "poster language"
+    "poster genre"
+    "poster boxoffice"
+    "poster awards"
+    "poster country"
+    "poster rating"
+    "poster released"
+    "plot plot"
+    "delete delete";
+    gap: 10px;
+}
+
+
+.poster-2{
+    grid-area: poster;
+}
+
+.title-2{
+    grid-area: title;
+    justify-self: start;
+    margin-top: -1vh;
+}
+
+.director-2{
+    grid-area: director;
+    justify-self: start;
+    margin-top: -1vh;
+}
+
+.genre-2{
+    grid-area: genre;
+    justify-self: start;
+    margin-top: -1vh;
+}
+
+.language-2{
+    grid-area: language;
+    justify-self: start;
+    margin-top: -1vh;
+}
+
+.boxoffice-2{
+    grid-area: boxoffice;
+    justify-self: start;
+    margin-top: -1vh;
+}
+
+.awards-2{
+    grid-area: awards;
+    justify-self: start;
+    padding-right: 20px;
+    margin-top: -1vh;
+}
+
+.country-2{
+    grid-area: country;
+    justify-self: start;
+    margin-top: -1vh;
+}
+
+.rating-2{
+    grid-area: rating;
+    justify-self: start;
+    margin-top: -1vh;
+}
+
+.released-2{
+    grid-area: released;
+    justify-self: start;
+    margin-top: -1vh;
+}
+
+.plot-2{
+    grid-area: plot;
+    justify-self: start;
+}
+
+.kk{
+    font-weight: 400;
+    border: none;
+}

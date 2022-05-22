@@ -1,0 +1,155 @@
+.loading-1{
+    margin-top: 20vh;
+    width: 15vw;
+}
+
+.noMovie{
+    margin-top: 5vh;
+    font-weight: 600;
+}
+
+.search{
+    background-color: #3d3c3c;
+    /* background-size: cover; */
+    min-height: 92vh;
+    max-height: 100%;
+    padding-top: 8vh;
+    /* display: grid; */
+    font-family: 'Quicksand', sans-serif;
+    color: #fff;
+}
+
+.form-1{
+    /* display: grid; */
+    /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
+    /* grid-gap: 1em; */
+    padding: 1%;
+    color: aliceblue;
+    /* margin-top: 1vh; */
+}
+
+.searchMovie{
+    width: 15vw;
+    padding: 5px;
+    border: none;
+    border-radius: 8px;
+    background-color: #fff;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.movieList{
+    border: 1px solid #fff;
+    border-radius: 8px;
+    margin-left: 8vw;
+    margin-right: 8vw;
+    padding: 2%;
+    margin-top: 2vw;
+    display: grid;
+    grid-template-areas:
+    "poster title"
+    "poster director"
+    "poster language"
+    "poster genre"
+    "poster boxoffice"
+    "poster awards"
+    "poster country"
+    "poster rating"
+    "poster released"
+    "plot plot";
+    gap: 10px;
+}
+
+.poster-1{
+    grid-area: poster;
+}
+
+.title-1{
+    grid-area: title;
+    justify-self: start;
+    margin-top: -1vh;
+}
+
+.director-1{
+    grid-area: director;
+    justify-self: start;
+    margin-top: -1vh;
+}
+
+.genre-1{
+    grid-area: genre;
+    justify-self: start;
+    margin-top: -1vh;
+}
+
+.language-1{
+    grid-area: language;
+    justify-self: start;
+    margin-top: -1vh;
+}
+
+.boxoffice-1{
+    grid-area: boxoffice;
+    justify-self: start;
+    margin-top: -1vh;
+}
+
+.awards-1{
+    grid-area: awards;
+    justify-self: start;
+    padding-right: 20px;
+    margin-top: -1vh;
+}
+
+.country-1{
+    grid-area: country;
+    justify-self: start;
+    margin-top: -1vh;
+}
+
+.rating-1{
+    grid-area: rating;
+    justify-self: start;
+    margin-top: -1vh;
+}
+
+.released-1{
+    grid-area: released;
+    justify-self: start;
+    margin-top: -1vh;
+}
+
+.plot-1{
+    grid-area: plot;
+    justify-self: start;
+}
+
+.kk{
+    font-weight: 400;
+    border: none;
+}
+
+.buttonSubmit{
+    margin-bottom: 10vh;
+}
+
+.buttonSubmit-1{
+    margin-bottom: 10vh;
+    width: auto;
+}
+
+.addMovie{
+    margin-top: -6vh;
+}
+
+.select-1{
+    width: 15vw;
+    padding: 5px;
+    border: none;
+    border-radius: 8px;
+    background-color: #fff;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1em;
+    font-weight: 500;
+}

@@ -1,0 +1,33 @@
+.navbar{
+    background-color: #de2020;
+    display: flex;
+    height: 6vh;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    top: 0%;
+    z-index: 999;
+    backdrop-filter: blur(100px);
+    box-shadow: 0 20px 30px rgba(163, 163, 163, 0.15);
+}
+
+li{
+    font-family: 'Quicksand', sans-serif;
+    /* text-decoration: none; */
+    list-style: none;
+    flex-direction: column;
+    cursor: pointer;
+    /* color: #000; */
+}
+
+.list{
+    color: #000;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.list:hover{
+    color: white;
+}
+
