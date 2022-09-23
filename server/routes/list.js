@@ -47,7 +47,7 @@ router.post('/createlist',verify,async(req, res) => {
 
 router.post('/addmovie',verify,async(req,res)=>{
     const {listName,newMovie,public} = req.body;
-    let listname = await List.findOne({listName});
+    let listname = await List.findOne({listName,postedBy:req.user._id});
     newMovie.postedBy = await req.user;
     newMovie.id = uuidv4();
 
@@ -60,7 +60,7 @@ router.post('/addmovie',verify,async(req,res)=>{
             public
         })
         await list.save();
-        listname = await List.findOne({listName});
+        listname = await List.findOne({listName,postedBy:req.user._id});
         return res.json({status:'ok',listname})
         // console.log(listname)
     }
@@ -71,7 +71,7 @@ router.post('/addmovie',verify,async(req,res)=>{
                 {_id:listname._id},
                 {$push :{movieList:newMovie}}
             )
-            listname = await List.findOne({listName});
+            listname = await List.findOne({listName,postedBy:req.user._id});
             return res.json({status:'ok',listname})
         }
         catch(err){
