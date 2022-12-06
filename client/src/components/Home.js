@@ -27,7 +27,7 @@ const Home = () => {
 
 
     const fetchData = async () => {
-        const res = await axios.get('https://movielists-007.herokuapp.com/mylists',{
+        const res = await axios.get('https://movie-library.onrender.com/mylists',{
             headers:{
                 "auth-token" : localStorage.getItem('token')
             }
@@ -39,7 +39,7 @@ const Home = () => {
 
 
     const handleDelete = async(itemId) => {
-        const res = await axios.delete(`https://movielists-007.herokuapp.com/deletelist/${itemId}`,{
+        const res = await axios.delete(`https://movie-library.onrender.com/deletelist/${itemId}`,{
             headers:{
                 "auth-token" : localStorage.getItem('token')
             }

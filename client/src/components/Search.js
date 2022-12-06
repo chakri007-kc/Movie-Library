@@ -40,7 +40,7 @@ const Search = () => {
         setmovies(res.data)
         setloading(false)
         setf(true)
-        const response = await axios.get('https://movielists-007.herokuapp.com/mylistnames',{
+        const response = await axios.get('https://movie-library.onrender.com/mylistnames',{
             headers:{
                 "auth-token" : localStorage.getItem('token')
             }
@@ -55,7 +55,7 @@ const Search = () => {
             listName : selectedlist,
             newMovie : movies
         }
-        const res = await axios.post('https://movielists-007.herokuapp.com/addmovie',data,{
+        const res = await axios.post('https://movie-library.onrender.com/addmovie',data,{
             headers:{
                 "auth-token" : localStorage.getItem('token')
             }

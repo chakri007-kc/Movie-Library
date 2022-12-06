@@ -15,7 +15,7 @@ const Signup = () => {
         e.preventDefault();
         // console.log(name, email, password)
         const newuser = {name,email,password}
-        const res = await axios.post('https://movielists-007.herokuapp.com/signup',newuser)
+        const res = await axios.post('https://movie-library.onrender.com/signup',newuser)
         // console.log(res.data)
         if(res.data.status === 'ok'){
             setName('')

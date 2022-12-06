@@ -27,7 +27,7 @@ const CreateList = () => {
     const handleSubmit = async(e) => {
         e.preventDefault();
         console.log(list,Public)
-        const res = await axios.post('https://movielists-007.herokuapp.com/createlist',{list,Public},{
+        const res = await axios.post('https://movie-library.onrender.com/createlist',{list,Public},{
             headers:{
                 "auth-token" : localStorage.getItem('token')
             }

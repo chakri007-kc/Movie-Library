@@ -21,7 +21,7 @@ const Card = () => {
     var f=1;
     const populatelists = async () => {
         console.log(id)
-        const res = await axios.get(`https://movielists-007.herokuapp.com/getlist/${id}`,{
+        const res = await axios.get(`https://movie-library.onrender.com/getlist/${id}`,{
             headers:{
                 "auth-token" : localStorage.getItem('token')
             }
@@ -44,7 +44,7 @@ const Card = () => {
 
 
     const handleDelete = async(itemId) => {
-        const res = await axios.delete(`https://movielists-007.herokuapp.com/deletemovie/${id}/${itemId}`,{
+        const res = await axios.delete(`https://movie-library.onrender.com/deletemovie/${id}/${itemId}`,{
             headers:{
                 "auth-token" : localStorage.getItem('token')
             }
